@@ -24,9 +24,13 @@ cases to use it:
     - clean up your local history before sharing a branch 
     - pull changes from a branch into your branch without performing a merge.
 
-steps for squashing commits with rebase: 
-git log --oneline    << see the branch history 
+steps for squashing commits with rebase:
+git log --oneline    << see the branch history
 git merge-base ticket1 master  << show the original base of the "ticket1" branch created from master. aka show common ancestor sha between master and branch
-git rebase -i <commit-sha>
-update the text with squash instead of pick 
+git rebase -i <commit-sha> or get rabase <origainl_branch> << first is for squashing.. second is for rebasing
+update the text with squash instead of pick
 choose the commit message 
+
+to see history of the rebase you will see 
+
+git reflog
