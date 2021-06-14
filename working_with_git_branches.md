@@ -27,10 +27,16 @@ cases to use it:
 steps for squashing commits with rebase:
 git log --oneline    << see the branch history
 git merge-base ticket1 master  << show the original base of the "ticket1" branch created from master. aka show common ancestor sha between master and branch
-git rebase -i <commit-sha> or get rabase <origainl_branch> << first is for squashing.. second is for rebasing
+git rebase -i <commit-sha> or get rabase <origainl_branch> << first is for squashing.. second is for rebasing >>
 update the text with squash instead of pick
-choose the commit message 
+choose the commit message
 
 to see history of the rebase you will see 
 
-git reflog
+git reflog 
+
+#Cherry pick 
+
+Check out a branch and run the command below to copy the commit in other branches to checked out branch
+git cherry-pick <<commit hash >>
+
