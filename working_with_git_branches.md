@@ -35,8 +35,20 @@ to see history of the rebase you will see
 
 git reflog 
 
-#Cherry pick 
+# Cherry pick 
 
 Check out a branch and run the command below to copy the commit in other branches to checked out branch
 git cherry-pick <<commit hash >>
 
+# Remotes
+git fetch: download but don't merge 
+git pull: download and merge
+
+git status : give information about the remote and how to resolve conflicts 
+
+to rebase from remote you can do 
+git rebase remote/origin
+This is a a good way to resolve conflicts with less chance of having to deal with merge conflicts.
+
+git ls-remote: list remote branches
+git push -u origin feature4 
